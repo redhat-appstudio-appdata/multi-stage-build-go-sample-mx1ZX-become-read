@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: multi-stage-build-go-sample
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/susdas-tenant/multi-stage-build-go-sample/multi-stage-build-go-sample@sha256:e5ae2818f681093322b076da049cb434a653a2c36b8856a01af58763e440e6cd
+        name: my-go
+        resources: {}
+status: {}
